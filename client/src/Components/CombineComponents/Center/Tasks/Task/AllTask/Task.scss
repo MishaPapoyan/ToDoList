@@ -1,0 +1,49 @@
+@import "../../../../../../styles/mixin";
+
+
+.task__main{
+  .aboutToday {
+    margin-bottom: 10px;
+    border: 2px solid grey;
+    border-radius: 20px;
+
+    &.bgGreen {
+      border-color: green;
+    }
+  }
+  .aboutToday .description{
+    @include display_flex(flex, space-between, center,  wrap);
+    img{
+      &:hover{
+        cursor: pointer;
+
+      }
+    }
+  }
+  .aboutToday  .description h2{
+    margin: 25px 0 25px 0;
+    text-align: left;
+    letter-spacing: 5px;
+    span{
+     color: grey;
+      font-size: 20px;
+      margin-left: -4%
+    }
+  }
+  .aboutToday .deadline{
+    margin-left: -25px;
+    button{
+      margin: 0 15px ;
+    }
+  }
+  .aboutToday  .about{
+    @include display_flex(flex, space-between, center, nowrap);
+  }
+  .edit{
+    &:hover{
+      cursor: pointer;
+      transform: scale(1.5);
+      transition: 1s;
+    }
+  }
+}

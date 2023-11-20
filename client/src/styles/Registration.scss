@@ -1,0 +1,60 @@
+@import "mixin";
+.register__container{
+  padding: 1% 15%;
+  //@include display_flex(flex, space-between, center, nowrap);
+  h2{
+    color: #000;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  p{
+    color: #8692A6;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+  }
+  input{
+    width: 426px;
+    height: 64px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    border: 1px solid #1565D8;
+    background: #FFF;
+    box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.11);
+  }
+  .email{
+    width: 89.7%;
+    margin-left: 10px;
+  }
+  .profession{
+    width: 89.7%;
+
+  }
+  .user_data input{
+    margin-right: 3%;
+  }
+  .gender{
+    @include display_flex(flex, space-between, center, nowrap);
+    input{
+      width: 426px;
+      height: 64px;
+      flex-shrink: 0;
+      background: none;
+      box-shadow: none;
+
+    }
+  }
+  .register{
+    width: 426px;
+    height: 64px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #2C73EB;
+    margin-left: 25%;
+    margin-top: 20px;
+  }
+}

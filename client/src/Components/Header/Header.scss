@@ -1,0 +1,32 @@
+@import "../../styles/var";
+@import "../../styles/mixin";
+@import "../../styles/reset";
+
+.navBar__main, .logo, .userProfile{
+  @include display_flex(flex, space-between, center, wrap);
+  .logo{
+    span{
+      font-size: 25px;
+      font-weight: bold;
+      letter-spacing: 5px;
+    }
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  .profile{
+    text-align: left;
+    font-size: 15px;
+    border: 2px solid aqua;
+    border-radius: 15px;
+    padding: 5px;
+
+
+  }
+  .userProfile .icon{
+    &:hover{
+      cursor: pointer;
+      transform: scale(1.2) rotate(-25deg); transition: 1s;
+    }
+  }
+}

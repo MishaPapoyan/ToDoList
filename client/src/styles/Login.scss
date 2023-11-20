@@ -1,0 +1,57 @@
+//@import "mixin";
+//.login__container{
+//  border: 1px solid aqua;
+//  width: 500px;
+//  margin-left: 34%;
+//  margin-top: 10%;
+//  .form-holder input{
+//    //@include display_flex(flex,center,center,nowrap)
+//    display: block;
+//    width: 50%;
+//    margin-top: 25px;
+//    padding: 10px;
+//    border-radius: 10px;
+//    margin-left: 20%;
+//
+//  }
+//  .submit-btn{
+//    border-radius: 25px;
+//    background: yellow;
+//    margin-left: 22%;
+//    margin-top: 25px;
+//    width: 200px;
+//    padding: 10px;
+//    cursor: pointer;
+//  }
+//}
+//
+
+.form {
+  background-color: var(--bgSoft);
+  padding: 50px;
+  border-radius: 10px;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  input {
+    width: 100%;
+    padding: 30px;
+    border: 2px solid #2e374a;
+    border-radius: 5px;
+    background-color: var(--bg);
+    color: var(--text);
+  }
+  button {
+    width: 100%;
+    padding: 30px;
+    background-color: teal;
+    color: var(--text);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+}

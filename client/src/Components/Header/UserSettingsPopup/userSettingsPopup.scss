@@ -1,0 +1,61 @@
+@import "../../../styles/mixin";
+.UserSettingsPopup__main{
+  position: relative;
+  button{
+    padding: 9px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-left: 15px;
+    background: #a3bded;
+    cursor: pointer;
+  }
+  background: aqua;
+    @include display_flex(flex,space-between,center,wrap);
+  top: 0;
+    left: 0;
+    width: 700px;
+    height: 600px;
+    z-index: 2;
+    margin-left: 25%;
+    margin-top: 5%;
+  .about__user{
+    margin-left: 30%;
+    text-align: center;
+  }
+  .save{
+    margin-left: 45%;
+  }
+  .info__about__user .stats{
+
+    @include display_flex(flex,space-between,center,wrap);
+  }
+  .change__info{
+    @include display_flex(flex,space-between,center,wrap);
+    input{
+      width: 100%;
+      border: none;
+      outline: none;
+      margin-top: 15px;
+      border-radius: 25px;
+      padding: 10px;
+    }
+    .close{
+      position: absolute;
+      right: 0 ;
+      top: 0;
+      border: none;
+      outline: none;
+      background: none;
+    }
+
+    .save{
+      padding: 5px;
+      border-radius: 10px;
+      margin-top: 25px;
+    }
+  }
+}
+
+.UserSettingsPopup__main{
+  position: fixed;
+}

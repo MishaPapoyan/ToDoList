@@ -1,0 +1,7 @@
+@import "../../styles/mixin";
+
+
+.main{
+  @include display_flex(flex, space-between, ' ', nowrap);
+  margin: 0 1% 0  0;
+}

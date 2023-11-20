@@ -1,0 +1,17 @@
+@import "../../../../../styles/mixin";
+
+.tasks__nav__main{
+  width: 600px;
+  @include display_flex(flex, space-between, center, ' ');
+  .spans{
+    padding: 0 0;
+    @include display_flex(flex, space-between, center, ' ');
+
+    span{
+      margin-right:  20px;
+    }
+  }
+
+  .header{
+  }
+}

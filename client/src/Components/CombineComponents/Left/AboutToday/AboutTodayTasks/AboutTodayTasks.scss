@@ -1,0 +1,20 @@
+@import "../../../../../styles/mixin";
+@import "../../../../../styles/var";
+
+.AboutTodayTasks__main{
+  margin-bottom: 20%;
+  border-radius: 20px;
+  padding: 2% 15px;
+  .content{
+    line-height: 25px;
+    text-align: left;
+    p{
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+  .heading{
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
